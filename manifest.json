@@ -19,5 +19,11 @@
   "background": {
     "service_worker": "background.js"
   },
-  "options_page": "options.html"
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["index.js", "popup.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
